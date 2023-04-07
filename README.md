@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -24,7 +24,7 @@ No final de cada tutorial, haverá um "Coding Challenge" para colocar os conceit
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -103,7 +103,7 @@ const app = Vue.createApp({
 
 >Agora, se abrirmos o arquivo "**index.html**" no browser (navegador), veremos o produto sendo mostrado. Ver figura abaixo:
 
-![Aplicativo no browser](app_browser_start.png)
+![Aplicativo no browser](img_readme/app_browser_start.png)
 
 ### **Passo 3. Compreendendo a Instância Vue**
 
@@ -117,7 +117,7 @@ const app = Vue.createApp({Options Object})
 
 3.2 Ao importar esse _app_ e montá-lo no DOM, basicamente nós o conectamos a ele (DOM), dando ao nosso HTML uma linha direta com o aplicativo. Dessa forma, nosso template de código pode acessar opções desse _app_, como, por exemplo, seus dados.
 
-![Linha Direta do app](linha_direta_app_vue.jpg)
+![Linha Direta do app](img_readme/linha_direta_app_vue.jpg)
 
 3.3 Se você está se perguntando o que está acontecendo com essa sintaxe de chaves duplas, você pode imaginá-la como um telefone, que tem acesso ao nosso aplicativo Vue. A partir do nosso template, podemos perguntar ao aplicativo: “Ei, qual é o valor do produto?”. E o _app_ responde: “**Socks**”. Quando a página renderiza, vemos a exibição de “**Socks**” na página.
 
