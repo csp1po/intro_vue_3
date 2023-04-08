@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "Coding Challenge" para colocar os conceit
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -144,11 +144,11 @@ Agora você deve substituir o conteúdo por este:
 ```
 >Agora, criamos um _vínculo reativo_ entre o atributo ``src="image"``e os próprios dados da imagem. Ver figura abaixo.
 
-![Exemplo diretiva v-bind](../img_readme/v-bind_directive_example.png)
+![Exemplo diretiva v-bind](img_readme/v-bind_directive_example.png)
 
 3.2 Aogra abra o arquivo "**index.html**" no browser. Você verá a página abaixo.
 
-![Página Meias Verdes](../img_readme/socks_green.jpg)
+![Página Meias Verdes](img_readme/socks_green.jpg)
 
 
 ### **Passo 4. Compreendendo o v-bind**
@@ -163,12 +163,12 @@ Agora você deve substituir o conteúdo por este:
 
 >Se você está pensando que isso não se parece com uma típica expressão JavaScript, você pode imaginá-la assim: ``v-bind:src="{{ image }}"``. Implicitamente, o Vue vai avaliá-lo da mesma forma. Veja a figura abaixo.
 
-![Exemplo v-bind](../img_readme/v-bind_example.jpg)
+![Exemplo v-bind](img_readme/v-bind_example.jpg)
 
 
 4.2 Por causa do sistema de reatividade do Vue, se atualizarmos nossos dados da imagem para um caminho que aponte para a imagem das meias azuis (``image: './assets/images/socks_blue.jpg'``), a expressão à qual nosso atributo ``src`` está vinculado seria atualizado e nosso navegador exibiria a imagem das meias azuis. A figura abaixo mostra como esta vinculação é reativa e dinâmica.
 
-![Reatividade Dinâmica v-bind](../img_readme/reatividade_dinamica_v-bind_blue.png)
+![Reatividade Dinâmica v-bind](img_readme/reatividade_dinamica_v-bind_blue.png)
 
 
 4.3 O uso da diretiva ``v-bind`` é tão comum que existe uma abreviação (_shorthand_) para isso, que é usar apenas os dois pontos:
@@ -179,7 +179,7 @@ Agora você deve substituir o conteúdo por este:
 
 >Assim como existem tantos atributos HTML diferentes, existem muitos casos de uso para o ``v-bind``. Por exemplo, você pode vincular uma descrição a um atributo ``alt``, vincular uma URL a um ``href``, vincular alguns estilos dinâmicos a uma classe (``class``) ou atributo de estilo (``style``), desativar e ativar um botão e assim por diante. Ver figura abaixo.
 
-![Casos de Uso v-bind](../img_readme/v-bind_use_cases.png)
+![Casos de Uso v-bind](img_readme/v-bind_use_cases.png)
 
 
 ### **Passo 5. Coding Challenge**
@@ -190,7 +190,7 @@ Agora você deve substituir o conteúdo por este:
 
 5.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![Code Challenge t3](../img_readme/code_challenge_t3.png)
+![Code Challenge t3](img_readme/code_challenge_t3.png)
 
 
 
