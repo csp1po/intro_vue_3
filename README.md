@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "Coding Challenge" para colocar os conceit
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -132,7 +132,7 @@ const app = Vue.createApp({
 
 >Veja a figura abaixo.
 
->![Exemplo diretiva v-bind](../img_readme/v-if_directive_example.png)
+>![Exemplo diretiva v-bind](img_readme/v-if_directive_example.png)
 
 Agora, se ``inStock`` possui valor ``false``, iremos ver a mensagem "**Fora de Estoque**" renderizado na página.
 
@@ -140,11 +140,11 @@ Agora, se ``inStock`` possui valor ``false``, iremos ver a mensagem "**Fora de E
 
 3.3 Agora abra o arquivo "**index.html**" no browser. Você verá a página abaixo.
 
-![v-if result true](../img_readme/v-if_directive_result_v.png)
+![v-if result true](img_readme/v-if_directive_result_v.png)
 
 3.4 Abra o arquivo "**main.js**" e altere o valor da propriedade ``inStock`` para ``false``. Após isto, abra o arquivo "**index.html**" no browser. Você verá a figura abaixo.
 
-![v-if result false](../img_readme/v-if_directive_result_f.png)
+![v-if result false](img_readme/v-if_directive_result_f.png)
 
 
 ### **Passo 4. Mostrar e Ocultar (Show and Hide)**
@@ -188,7 +188,7 @@ const app = Vue.createApp({
 
 >Agora, só renderizaremos a primeira tag ``<p>`` se o inventário for maior que 10.
 >Se abrirmos o arquivo "**index.html**" no browser teremos a figura abaixo.
->![v-if result true](../img_readme/v-if_directive_result_v.png)
+>![v-if result true](img_readme/v-if_directive_result_v.png)
 
 
 5.3 Digamos que agora queremos exibir uma nova mensagem quando o produto estiver quase esgotado. Nesta situação, poderíamos adicionar outro nível condicional, onde estamos atentos para que a propriedade ``inventory`` fique abaixo de 10 mas acima de 0 (altere o valor da propriedade ``inventory`` em "**main.js**" para **8**). Agora abra o arquivo "**index.html**" altere as linhas dos elementos ``<p>`` em questão, para:
@@ -200,13 +200,13 @@ const app = Vue.createApp({
 ```
 5.4 Ao abrir o arquivo "index.html" no browser, irá aparecer a figura abaixo.
 
-![v-if result true](../img_readme/v-if_directive_inventory_8.png)
+![v-if result true](img_readme/v-if_directive_inventory_8.png)
 
 >A diretiva ``v-else-if`` nos dá uma camada intermediária de lógica. Como podemos observer, quando o valor da propriedade ``inventory`` foi alterado para 8, o elemento em questão foi renderizado. 
 >
 >Claro que, se o valor de ``inventory``for zero, vamos padronizar para o nível final de ``v-else`` e exibir “**Fora de estoque**”. Veja a figura abaixo.
 
-![Exemplo v-bind](../img_readme/v-if_directive_inventory_0.png)
+![Exemplo v-bind](img_readme/v-if_directive_inventory_0.png)
 
 
 ### **Passo 6. Coding Challenge**
@@ -219,7 +219,7 @@ const app = Vue.createApp({
 
 6.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![Code Challenge t3](../img_readme/code_challenge_t4.png)
+![Code Challenge t3](img_readme/code_challenge_t4.png)
 
 
 
