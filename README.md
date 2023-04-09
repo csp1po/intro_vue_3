@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "Coding Challenge" para colocar os conceit
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -123,7 +123,7 @@ const app = Vue.createApp({
 
 Surge, então uma pergunta. Mas como a diretiva ``v-for`` está realmente funcionando? A figura abaixo mostra o funcionamento desta diretiva.
 
-![v-for work](../img_readme/v-for_work.png)
+![v-for work](img_readme/v-for_work.png)
 
 O _alias_ ``detail`` efetua um "_looping_" sobre a coleção de dados (_array_) que está no arquivo "**main.js**", e, a cada iteração, um elemento da lista (i.e. _array_) é mostrado na página HTML.
 
@@ -162,7 +162,7 @@ const app = Vue.createApp({
 
 3.3 Agora abra o arquivo "**index.html**" no browser. Você verá a página abaixo.
 
-![v-if result true](../img_readme/v-for_directive_list_variants_1.png)
+![v-if result true](img_readme/v-for_directive_list_variants_1.png)
 
 >Observe que estamos usando a notação de ponto (_dot notation_) para imprimir cada variante à medida que percorremos a _array_ chamada de ``variants``.
 
@@ -182,7 +182,7 @@ const app = Vue.createApp({
 
 Observe a figura abaixo. Ela ilustra o que acabamos de fazer no Passo 4.1 acima. Ao definir um atributo ``key``, provê a cada elemento DOM uma chave (``key``) única.
 
-![v-if result true](../img_readme/v-for_setting_key_attribute.png)
+![v-if result true](img_readme/v-for_setting_key_attribute.png)
 
 
 ### **Passo 6. Coding Challenge**
@@ -195,7 +195,7 @@ Observe a figura abaixo. Ela ilustra o que acabamos de fazer no Passo 4.1 acima.
 
 6.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![Code Challenge t5](../img_readme/code_challenge_t5.png)
+![Code Challenge t5](img_readme/code_challenge_t5.png)
 
 
 
