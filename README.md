@@ -119,7 +119,7 @@ const app = Vue.createApp({
 
 2.3 Agora abra o arquivo "**index.html**" no browser. Veremos uma lista de detalhes. Ver a figura abaixo.
 
-![v-for list details](../img_readme/v-for_directive_list_details.png)
+![v-for list details](img_readme/v-for_directive_list_details.png)
 
 Surge, então uma pergunta. Mas como a diretiva ``v-for`` está realmente funcionando? A figura abaixo mostra o funcionamento desta diretiva.
 
