@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "Coding Challenge" para colocar os conceit
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -102,7 +102,7 @@ const app = Vue.createApp({
 >Neste tutorial, veremos o conceito de tratamento ou manipulação de eventos (_Event Handling_).
 >Ao abrir o arquivo "**index.html**" no browser, você verá que agora temos um botão ``Add to Cart`` (Adicionar ao carrinho), junto com uma ``<div>``com a classe ``cart``, que inclui uma expressão para imprimir o valor de nossos novos dados do carrinho. Ver figura abaixo.
 
-![event_handling_html_inicial](../img_readme/event_handling_html_inicial.png)
+![event_handling_html_inicial](img_readme/event_handling_html_inicial.png)
 
 >No arquivo "**index.html**" o código que estamos falando acima é este:
 
@@ -142,7 +142,7 @@ A grande pergunta aqui é: **como nós ouvimos eventos em elementos HTML**?
 
 Existe uma diretiva no Vue.JS que serve para isto. Ela se chama ``v-on``. A figura abaixo ilustra como funciona.
 
-![v-on_directive_event_handling](../img_readme/v-on_directive_event_handling.png)
+![v-on_directive_event_handling](img_readme/v-on_directive_event_handling.png)
 
 >Coloca-se ``v-on``seguido por dois pontos ``:`` e especificamos o tipo de evento que queremos "**ouvir**". Neste caso será ``click``. Depois, entre aspas, a expressão que estamos acionando. Aqui, estamos incrementando ``cart`` por 1.
 
@@ -197,7 +197,7 @@ const app = Vue.createApp({
 
 2.3 Agora abra o arquivo "**index.html**" no browser. Agora devemos ser capazes de clicar no botão "**Add To Cart**" e ver o valor de ``cart`` que se encontra no lado direito superior da página, subir em 1. Ver a figura abaixo.
 
-![v-on_directive_addToCart](../img_readme/v-on_directive_addToCart.png)
+![v-on_directive_addToCart](img_readme/v-on_directive_addToCart.png)
 
 
 
@@ -205,7 +205,7 @@ const app = Vue.createApp({
 
 Vamos dar uma olhada mais profunda em como esse tratamento de eventos está funcionando. Observe a figura abaixo.
 
-![v-on_directive_how_works](../img_readme/v-on_directive_how_works.jpg)
+![v-on_directive_how_works](img_readme/v-on_directive_how_works.jpg)
 
 Ao adicionar a diretiva ``v-on`` a um elemento, estamos essencialmente dando a ele um ouvido para ouvir eventos. Nesse caso, especificamos que estamos ouvindo eventos de clique. Quando ele acontece, o método ``addToCart`` é executado, que como acabamos de ver, pega o valor de ``cart`` e o incrementa em uma unidade.
 
@@ -224,7 +224,7 @@ Isto quer dizer que nosso código poderia ser simplificado assim.
 
 No momento, estamos exibindo as cores variantes, “green” e “blue”, logo abaixo dos detalhes do produto. Ver figura abaixo.
 
-![v-on_directive_addToCart](../img_readme/v-on_directive_addToCart.png)
+![v-on_directive_addToCart](img_readme/v-on_directive_addToCart.png)
 
 Não seria legal se, ao passarmos o mouse sobre as palavras “green” e “blue”, ativássemos uma atualização da imagem para a meia verde ou azul, respectivamente? Para isto, vamos adicionar a capacidade de ouvir eventos de ``mouseover`` (termo do Vue para “**hover**”) nesses nomes de cores.
 
@@ -270,11 +270,11 @@ methods: {
 
 4.4 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![v-on_directive_green_socks](../img_readme/v-on_directive_green_socks.png)
+![v-on_directive_green_socks](img_readme/v-on_directive_green_socks.png)
 
 Ou assim:
 
-![v-on_directive_blue_socks](../img_readme/v-on_directive_blue_socks.png)
+![v-on_directive_blue_socks](img_readme/v-on_directive_blue_socks.png)
 
 
 ### **Passo 6. Coding Challenge**
@@ -284,7 +284,7 @@ Ou assim:
 
 6.2 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![Code Challenge t6](../img_readme/code_challenge_t6.png)
+![Code Challenge t6](img_readme/code_challenge_t6.png)
 
 
 
