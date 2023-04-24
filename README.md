@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "***Coding Challenge***" para colocar os c
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -120,7 +120,7 @@ const app = Vue.createApp({
 >
 >>Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
-![event_handling_html_inicial](../img_readme/event_handling_html_inicial.png)
+![event_handling_html_inicial](img_readme/event_handling_html_inicial.png)
 
 >No Tutorial 06, adicionamos um recurso onde, ao passar o mouse sobre as palavras ``green`` ou ``blue``, a imagem que está sendo exibida será atualizada; ou seja, meias verdes ou azuis, respectivamente. Mas a experiência do usuário (UX) não seria melhor se, em vez de passar o mouse sobre as palavras "verde" ou "azul", passássemos o mouse sobre as cores reais **verde** ou **azul**? É o que faremos no próximo passo.
 
@@ -166,7 +166,7 @@ Altere o código acima para:
 
 >Como você pode ver, ele simplesmente transforma nossa ``<div>`` em um círculo com 50px de diâmetro. Veja a figura abaixo.
 
-![circle_50_green_blue](../img_readme/circle_50_green_blue.png)
+![circle_50_green_blue](img_readme/circle_50_green_blue.png)
  
 
 Assim como parece, queremos vincular estilos à "**div**" das variantes. Faremos isso usando ``v-bind`` (ou sua abreviação: ``:``) no atributo ``style`` e vinculando um objeto a ele. Também precisamos definir o ``backgroundColor`` dessa ``<div>`` para que seja igual ao ``variant.color``. Então, em vez de imprimir essas strings (i.e. “*green*” e “*blue*”), estamos usando-as para definir a cor de fundo de nossos círculos. 
@@ -197,14 +197,14 @@ Agora altere o código para:
 
 2.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![v-bind_colors_green_blue](../img_readme/v-bind_colors_green_blue.png)
+![v-bind_colors_green_blue](img_readme/v-bind_colors_green_blue.png)
 
 
 ### **Passo 3. Compreendendo a Vinculação de Estilos (Style Binding)**
 
 Vamos dar uma olhada mais profunda em como isto está funcionando. Observe a figura abaixo.
 
-![v-bind_style_how_works](../img_readme/v-bind_style_how_works.jpg)
+![v-bind_style_how_works](img_readme/v-bind_style_how_works.jpg)
 
 Na nossa ``<div>`` variante, adicionamos o atributo ``<style>`` e vinculamos um objeto de estilo a ele. Veja o código:
 
@@ -247,7 +247,7 @@ Ambas opções funcionarão, desde que você se lembre de colocar as aspas.
 
 Às vezes, você pode querer adicionar vários estilos a um elemento, mas adicioná-los todos em linha ("*inline*") pode ser confuso. Nessas situações, podemos vincular a um objeto de estilo inteiro que reside em nossos dados (``main.js``). Veja a figura abaixo.
 
-![v-bind_style_objects](../img_readme/v-bind_style_objects.jpg)
+![v-bind_style_objects](img_readme/v-bind_style_objects.jpg)
 
 Agora que examinamos o tópico de vinculação de estilo, vamos examinar um tópico semelhante: vinculação de classe.
 
@@ -299,7 +299,7 @@ Para aplicar esta classe condicionalmente, com base no valor de ``inStock``, usa
 
 4.4 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![v-on_directive_disabled_button](../img_readme/v-on_directive_disabled_button.jpg)
+![v-on_directive_disabled_button](img_readme/v-on_directive_disabled_button.jpg)
 
 ### **Passo 5. Múltiplos Nomes de Classes**
 
@@ -307,7 +307,7 @@ Ao começar a vinculação de classe, há algumas coisas a serem observadas. Por
 
 Por exemplo, se já tivermos uma classe chamada ``color-circle`` em uma ``<div>`` e adicionarmos uma classe chamada ``active`` condicionalmente, como isso ficará? A figura abaixo mostra o que pretendemos fazer.
 
-![active_class_condition](../img_readme/active_class_condition.jpg)
+![active_class_condition](img_readme/active_class_condition.jpg)
 
 Essas classes serão combinadas da seguinte forma: 
 
@@ -319,7 +319,7 @@ Essas classes serão combinadas da seguinte forma:
 
 Uma ferramenta útil que a vinculação de classe nos oferece é a capacidade de usar operadores ternários em linha para adicionar classes diferentes com base em uma condição. Observe a figura abaixo.
 
-![ternary_operators_class_binding](../img_readme/ternary_operators_class_binding.jpg)
+![ternary_operators_class_binding](img_readme/ternary_operators_class_binding.jpg)
 
 Nesse caso, como ``isActive`` é ``true``, estamos de fato adicionando a classe chamada ``activeClass``. Caso seja ``false``, não adicionaríamos nenhuma classe (``''``). Alternativamente, poderíamos ter adicionado uma classe totalmente diferente.
 
@@ -332,7 +332,7 @@ As variações na sintaxe e os casos de uso que acabamos de praticar com vincula
 
 7.2 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![Code Challenge t7](../img_readme/code_challenge_t7.png)
+![Code Challenge t7](img_readme/code_challenge_t7.png)
 
 
 
