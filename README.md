@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
