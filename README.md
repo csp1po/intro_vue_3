@@ -3,4 +3,3 @@
 ### Cada branch possui um tutorial
 #### Material foi compilado de um curso da VueMastery.com
 
-##### qualquer coisa
