@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "***Coding Challenge***" para colocar os c
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -119,7 +119,7 @@ const app = Vue.createApp({
 >
 >>Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
-![computed_properties_html_inicial](../img_readme/computed_properties_html_inicial.png)
+![computed_properties_html_inicial](img_readme/computed_properties_html_inicial.png)
 
 >Neste Tutorial vamos atualizar a imagem variante ("**variant image**") e verificar se ela está em estoque ou não, usando as propriedades calculadas (ou computadas). E é o que faremos no próximo passo.
 
@@ -154,7 +154,7 @@ O que fizemos foi combinar a propriedade ``brand`` com ``product`` em nosso temp
 
 2.2 Abra o arquivo "**index.html**" no browser, e você verá a imagem abaixo:
 
-![computed_properties_html_atualizada](../img_readme/computed_properties_html_atualizada.png)
+![computed_properties_html_atualizada](img_readme/computed_properties_html_atualizada.png)
 
 Ao verificarmos isso no navegador, veremos “**Vue Mastery Socks**” exibido. Mas não seria legal se, em vez de lidar com essa lógica no HTML interno, nosso aplicativo pudesse calcular esse valor para nós? Por exemplo, pegar a marca e o produto, somar e retornar esse novo valor.
 
@@ -186,7 +186,7 @@ computed: {
 
 2.5 Abra novamente o arquivo "**index.html**" no browser. Ao verificarmos o navegador, ainda veremos "**Vue Mastery Socks**" sendo exibida, exceto que agora abstraímos a lógica computacional do modelo e a incluímos perfeitamente no objeto de opções.
 
-![computed_properties_html_atualizada_2](../img_readme/computed_properties_html_atualizada_2.png)
+![computed_properties_html_atualizada_2](img_readme/computed_properties_html_atualizada_2.png)
 
 
 
@@ -194,7 +194,7 @@ computed: {
 
 Vamos dar uma olhada mais profunda em como isto está funcionando. Pense nelas como se fossem uma calculadora, que computa (i.e. calcula) valores para nós. Tal calculadora pega nossos valores (``brand``e ``product``), adiciona-os e nos dá o resultado. Observe a figura abaixo. 
 
-![computed_properties_calculadora](../img_readme/computed_properties_calculadora.jpg)
+![computed_properties_calculadora](img_readme/computed_properties_calculadora.jpg)
 
 > Como foi mencionado anteriormente, as propriedades computadas nos fornecem uma melhoria de desempenho. Isso ocorre porque elas armazenam em cache o valor calculado. O valor ("**Vue Mastery Socks**") é armazenado e atualizado apenas quando necessário, quando uma de suas dependências muda. Por exemplo, se a marca mudasse de '**Vue Mastery**' para '**Node Mastery**', nossa propriedade computada receberia essa nova dependência da marca (``brand``), então recalcularia e retornaria o novo valor: '**Node Mastery Socks**'.
 
@@ -294,7 +294,7 @@ computed: {
 
 4.6 Ao verificar isso no browser, quando passamos o mouse sobre os círculos de cores, não apenas atualizamos a imagem da variante, mas também exibimos se essa variante está em estoque ou fora de estoque, usando sua quantidade. A figura abaixo mostra isto.
 
-![computed_properties_hover_color_circles](../img_readme/computed_properties_hover_color_circles.jpg)
+![computed_properties_hover_color_circles](img_readme/computed_properties_hover_color_circles.jpg)
 
 
 4.7 Observe na figura acima como o botão ainda está atualizando automaticamente para nós, ativando e desativando. Isso porque, em nosso modelo, ainda estamos usando ``inStock``. Portanto, temos que atualizar o arquivo "**index.html**". Abra-o e atualize o elemento ``<button>`` com o conteúdo abaixo.
@@ -318,7 +318,7 @@ computed: {
 
 5.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![code_challenge_t8](../img_readme/code_challenge_t8.png)
+![code_challenge_t8](img_readme/code_challenge_t8.png)
 
 
 
