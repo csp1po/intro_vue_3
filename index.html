@@ -17,12 +17,25 @@
           <div class="product-image">
             <img v-bind:src="image">
           </div>
+
           <div class="product-info">
             <h1>{{ product }}</h1>
             <p v-if="inStock">Em Estoque</p>
             <p v-else>Fora de Estoque</p>
+
+            <h2>Detalhes</h2>
+            <ul>
+              <li v-for="detail in details"> {{ detail }} </li>
+            </ul>
+
+            <h2>Cores</h2>
+            <div v-for:="variant in variants" :key="variant.id">{{ variant.color }}</div>
+
+            <h2>Tamanhos</h2>
+            <ul>
+              <li v-for="size in sizes" :key="size.id"> {{size.size}} </li>
+            </ul>
           </div>
-        </div>
       </div>
     </div>
 
