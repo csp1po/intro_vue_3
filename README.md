@@ -129,7 +129,7 @@ const app = Vue.createApp({
 })
 ```
 
->Nesta lição, veremos o conceito de componentes e propriedades (forma abreviada é ``props``) do Vue.js.(_Components & Props_).
+>Neste tutorial, veremos o conceito de componentes e propriedades (forma abreviada é ``props``) do Vue.js.(_Components & Props_).
 >
 >>Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
