@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "***Coding Challenge***" para colocar os c
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -133,7 +133,7 @@ const app = Vue.createApp({
 >
 >>Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
-![components_props_html_inicial](../img_readme/components_props_html_inicial.png)
+![components_props_html_inicial](img_readme/components_props_html_inicial.png)
 
 >Neste Tutorial vamos refatorar o aplicativo de exemplo para usar um componente de produto, que usa uma ``prop``. E é o que faremos no próximo passo.
 
@@ -141,18 +141,18 @@ const app = Vue.createApp({
 
 Nos frameworks front-end modernos que usam JavaScript, os componentes são os blocos de construção de um aplicativo, e esse certamente é o caso do Vue. Você pode imaginá-los como se fossem bloquinhos de Legos que você pode conectar uns aos outros em uma hierarquia de árvore genealógica de componentes. Ver figura abaixo.
 
-![block_components_lego](../img_readme/block_components_lego.jpg)
+![block_components_lego](img_readme/block_components_lego.jpg)
 
 Qualquer página da Web pode ser composta por vários componentes e é comum que esses componentes sejam “**pais**” que tenham componentes **filhos** aninhados dentro deles. Ver figura abaixo.
 
-![block_components_lego_2](../img_readme/block_components_lego_2.jpg)
+![block_components_lego_2](img_readme/block_components_lego_2.jpg)
 
 
 ### **Passo 2. Criando Nosso Primeiro Componente**
 
 2.1 Como nosso aplicativo eventualmente terá vários componentes, vamos criar uma pasta chamada ``components``, dentro da pasta chamada "**intro-to-vue-3**". Veja figura abaixo.
 
-![create_components_folder](../img_readme/create_components_folder.jpg)
+![create_components_folder](img_readme/create_components_folder.jpg)
 
 Após isto, vamos criar nosso primeiro componente, chamado ``ProductDisplay.js``, dentro da pasta ``components``.
 
@@ -299,7 +299,7 @@ const app = Vue.createApp({
 
 5.3 Abra o arquivo "**index.html**" no seu navegador. Você verá a figura abaixo.
 
-![add_to_cart_not_working](../img_readme/add_to_cart_not_working.png)
+![add_to_cart_not_working](img_readme/add_to_cart_not_working.png)
 
 5.4 A título de observação, para mostrar como esses blocos de código reutilizáveis podem ser úteis, vamos inserir mais dois componentes de exibição do produto (``product-display``). Abra o arquivo "**index.html**" novamente e modifique seu conteúdo para:
 
@@ -316,17 +316,17 @@ const app = Vue.createApp({
 
 > Quando atualizamos o navegador, veremos todos eles aparecendo. Cada um deles é funcional de forma independente. Veja a figura abaixo.
 
-![product_display_showing_up](../img_readme/product_display_showing_up.png)
+![product_display_showing_up](img_readme/product_display_showing_up.png)
 
 ### **Passo 6. Props**
 
 Agora que estamos começando a aprender como encapsular código reutilizável nesses componentes, o que acontece quando nosso componente precisa de algo que está fora dele mesmo? Por exemplo, e se o componente pai, por assim dizer, tivesse alguns dados de mensagem e o componente filho precisasse deles? Como um componente tem seu próprio escopo isolado, ele não pode alcançar algo que esteja fora deste alcançe. A figura abaixo ilustra o que acabamos de dizer.
 
-![out_of_scope_component](../img_readme/out_of_scope_component.jpg)
+![out_of_scope_component](img_readme/out_of_scope_component.jpg)
 
 E como resolver isto? A resposta aqui é o uso das ``props``. Elas são atributos personalizados para passar dados para um componente. Elas funcionam como um funil, no qual você pode passar dados que o componente precisa. Veja a figura abaixo.
 
-![funnel_component](../img_readme/funnel_component.jpg)
+![funnel_component](img_readme/funnel_component.jpg)
 
 > Vamos adicionar a capacidade de nosso componente ``product-display`` receber uma ``prop``.
 
@@ -349,7 +349,7 @@ const app = Vue.createApp({
 ```
 O que fizemos acima foi para indicar se caso um usuário for ``premium``, o frete (``shipping``) será gratuito. Portanto, nosso componente ``product-display`` precisa acessar esses dados. Em outras palavras, ele precisa de um atributo personalizado (um funil) no qual possamos alimentá-los. Vamos adicionar isso agora, dando ao componente uma ``prop`` ``premium`` a ele. A figura abaixo ilustra o que iremos fazer e como isto acontece.
 
-![funnel_component_2](../img_readme/funnel_component_2.jpg)
+![funnel_component_2](img_readme/funnel_component_2.jpg)
 
 
 7.2 Abra o aqruivo "**components/ProductDisplay.js**" e adicione o trecho de código abaixo logo abaixo da **primeira linha**:
@@ -432,11 +432,11 @@ computed: {
 
 8.3 Para verificar o que fizemos, abra o arquivo "index.html" no browser. Você verá a figura abaixo.
 
-![shipping_component_true](../img_readme/shipping_component_true.png)
+![shipping_component_true](img_readme/shipping_component_true.png)
 
 > Se alterarmos o valor da propriedade de dados ``premium`` no arquivo "**main.js**" para ``false``, o browser irá mostrar:
 
-![shipping_component_false](../img_readme/shipping_component_false.png)
+![shipping_component_false](img_readme/shipping_component_false.png)
 
 
 ### **Passo 9. Coding Challenge**
@@ -445,7 +445,7 @@ computed: {
 
 9.2 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![code_challenge_t9](../img_readme/code_challenge_t9.png)
+![code_challenge_t9](img_readme/code_challenge_t9.png)
 
 
 
