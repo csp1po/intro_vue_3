@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -84,7 +84,7 @@ const app = Vue.createApp({
 >
 >Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
-![communicating_events_html_inicial](../img_readme/communicating_events_html_inicial.png)
+![communicating_events_html_inicial](img_readme/communicating_events_html_inicial.png)
 
 >O objetivo aqui é dar ao nosso componente a capacidade de permitir que seu componente "_pai_" saiba que um evento aconteceu dentro dele.
 
@@ -95,7 +95,7 @@ Nós precisamos dar ao componente ``product-display`` uma maneira de "_anunciar_
 
 Já sabemos que as ``props`` são uma maneira de passar dados para um componente, mas e quando algo acontece dentro desse componente, como por exemplo, um clique de botão? Como permitimos que outras partes do nosso aplicativo saibam que esse evento aconteceu? Ver figura abaixo.
 
-![add_to_cart_event](../img_readme/add_to_cart_event.jpg)
+![add_to_cart_event](img_readme/add_to_cart_event.jpg)
 
 A resposta é *emitir* esse evento, informando ao componente _pai_ que isso aconteceu. Vamos adicionar essa capacidade em nosso componente ``product-display``, corrigindo o método ``addToCart()``.
 
@@ -135,11 +135,11 @@ Altere o conteúdo acima por:
 ```
 O que acontece aqui é que quando esse evento for “ouvido” pelo componente _pai_, ele acionará um novo método com o nome de ``updateCart``. A figura abaixo ilustra o que está acontecendo.
 
-![add_to_cart_emits_event](../img_readme/add_to_cart_emits_event.jpg)
+![add_to_cart_emits_event](img_readme/add_to_cart_emits_event.jpg)
 
 Nesta figura abaixo vemos o método já implementado no arquivo "**main.js**". Faremos isto posteriormente. 
 
-![updateCart_method_event](../img_readme/updateCart_method_event.png)
+![updateCart_method_event](img_readme/updateCart_method_event.png)
 
 
 2.3 Abra o arquivo "**main.js**" e adicione o trecho de código abaixo:
@@ -154,7 +154,7 @@ methods: {
 
 2.4 Abra o arquivo "**index.html**" no browser. Você verá a figura abaixo e tudo está funcionando. Ao clicarmos no botão ``Add to Cart``, o valor do carrinho é alterado.
 
-![add_to_cart_method_working_event](../img_readme/add_to_cart_method_working_event.png)
+![add_to_cart_method_working_event](img_readme/add_to_cart_method_working_event.png)
 
 > Em outras palavras, ao clicarmos no botão ``Add to Cart``,  isto permitiu que o componente _pai_ soubesse que o evento de adição ao carrinho ocorreu, acionando o método ``updateCart()``.
 
@@ -207,7 +207,7 @@ computed: {
 
 3.3 Agora abra o arquivo "index.html" no browser. Você verá a figura abaixo.
 
-![add_to_cart_method_array](../img_readme/add_to_cart_method_array.png)
+![add_to_cart_method_array](img_readme/add_to_cart_method_array.png)
 
 > Porém não precisamos realmente exibir esses ``IDs`. Queremos apenas exibir quantos itens estão no carrinho. Felizmente, essa é uma solução rápida.
 
@@ -229,7 +229,7 @@ computed: {
 
 4.2 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![code_challenge_t10](../img_readme/code_challenge_t10.png)
+![code_challenge_t10](img_readme/code_challenge_t10.png)
 
 
 
