@@ -205,7 +205,7 @@ computed: {
 }
 ```
 
-3.3 Agora abra o arquivo "index.html" no browser. Você verá a figura abaixo.
+3.3 Agora abra o arquivo "**index.html**" no browser. Você verá a figura abaixo.
 
 ![add_to_cart_method_array](img_readme/add_to_cart_method_array.png)
 
