@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "***Coding Challenge***" para colocar os c
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
