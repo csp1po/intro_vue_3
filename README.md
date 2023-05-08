@@ -4,7 +4,7 @@
 
 Neste curso vamos aprender os fundamentos do Vue.JS e construir uma aplicação (_app_) para colocar estes conceitos em prática. Veja a figura abaixo.
 
-![App do tutorial](../img_readme/imagem_aplicativo_vue.png)
+![App do tutorial](img_readme/imagem_aplicativo_vue.png)
 
 ## **IDE recomendado**
 
@@ -26,7 +26,7 @@ No final de cada tutorial, haverá um "***Coding Challenge***" para colocar os c
 
 1.3 No painel esquerdo do VS Code, você verá uma estrutura de diretório que se parece com a figura abaixo.
 
-![Estrutura do diretório](../img_readme/estrutura_diretorio_vue.jpg)
+![Estrutura do diretório](img_readme/estrutura_diretorio_vue.jpg)
 
 Dentro do arquivo "**index.html**", o seu conteúdo será:
 
@@ -88,7 +88,7 @@ const app = Vue.createApp({
 >
 >Ao abrir o arquivo "**index.html**" no browser, você verá a figura abaixo.
 
-![forms_v-model_html_inicial](../img_readme/forms_v-model_html_inicial.png)
+![forms_v-model_html_inicial](img_readme/forms_v-model_html_inicial.png)
 
 >O objetivo aqui é criar um formulário para os usuários adicionarem avaliações dos produtos.
 
@@ -98,7 +98,7 @@ Num dos primeiros tutoriais, aprendemos sobre a diretiva de vinculação chamada
 
 Por exemplo, quando um usuário insere seu nome em um campo de entrada (elemento ``<input>``), queremos registrar e armazenar esse valor em nossos dados. A diretiva ``v-model`` nos ajuda a conseguir isso, criando uma vinculação de dados bidirecional ("**two-way data binding**"). Veja a figura abaixo.
 
-![v-model-demo](../img_readme/v-model-demo.jpg)
+![v-model-demo](img_readme/v-model-demo.jpg)
 
 Para ver tudo isso em ação, vamos criar um novo componente chamado ``review-form``.
 
@@ -261,7 +261,7 @@ template:
 
 4.3 Abra o arquivo "**index.html**" no browser e veja que o componente ``review-form`` foi inserido.
 
-![review_form_example](../img_readme/review_form_example.png)
+![review_form_example](img_readme/review_form_example.png)
 
 > Parece que está funcionando... exceto que quando clicamos no botão ``Submit``, estamos emitindo o evento, mas não o ouvimos em nenhum lugar. Como aprendemos no tutorial anterior (**Tutorial 10**), precisamos ouvir o evento ``review-submitted`` no escopo do componente _pai_ (i.e. no ``product-display``).
 
@@ -382,11 +382,11 @@ Observe como adicionamos a ``prop`` chamada ``:reviews="reviews"`` para que poss
 
 5.4 Agora abra o arquivo "**index.html**" no browser. Você verá que adicionamos uma nova _review_, clicamos no botão ``Submit`` e a veremos sendo exibida.
 
-![review_being_showed](../img_readme/review_being_showed.png)
+![review_being_showed](img_readme/review_being_showed.png)
 
 > Até aqui tudo bem, porém quando atualizamos o browser (e não há revisões), ainda vemos uma caixa vazia porque o componente da lista de revisões ainda está sendo renderizado sem revisões para imprimir. Ver figura abaixo.
 
-![review_list_empty](../img_readme/review_list_empty.png)
+![review_list_empty](img_readme/review_list_empty.png)
 
 
 > Vamos corrigir isso e apenas renderizar esse componente quando tivermos revisões para exibir.
@@ -406,7 +406,7 @@ template:
 > Em outras palavras, se a _array_ ``reviews`` estiver vazia, não mostraremos o componente ``review-list``.
 > Atualizando o browser, parece que está funcionando e o componente só aparece depois que adicionamos uma ``review``.
 
-![review_list_not_empty](../img_readme/review_list_not_empty.png)
+![review_list_not_empty](img_readme/review_list_not_empty.png)
 
 ### **Passo 6. Validação de Formulário Básica**
 
@@ -439,7 +439,7 @@ E, em seguida, saia do método.
 
 7.3 Abra o arquivo "**index.html**" no browser. Você verá algo assim.
 
-![code_challenge_t11](../img_readme/code_challenge_t11.png)
+![code_challenge_t11](img_readme/code_challenge_t11.png)
 
 
 
